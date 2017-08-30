@@ -1,0 +1,190 @@
+/* ================================================================
+   footer
+   ================================================================ */
+
+.footer-50 {
+    width: calc(50% - 10px);
+}
+
+.footer-55 {
+    width: calc(55% - 10px);
+}
+
+.footer-45 {
+    width: calc(45% - 10px);
+}
+
+.f-mobile-50 {
+}
+
+/* ================================================================
+   footer
+   ================================================================ */
+
+.footer-ul
+ul {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        a {
+            display: block;
+            padding: 8px 0;
+            font-family: $young;
+            font-size: 15px;
+            line-height: 1;
+            @media all and (max-width: 1160px) {
+                font-size: 16px;
+            }
+            color: $grey-slider-text;
+            //margin: 0;
+            &:hover {
+
+            }
+        }
+    }
+}
+
+.footer-button {
+    width: 20%;
+    margin: 0;
+    height: 40px;
+    background-color: $black-text;
+    border: 1px solid $black-text;
+    color: $white;
+    cursor: pointer;
+    font-family: $sweet-pea;
+    font-size: 22px;
+}
+
+.footer-input {
+    width: 40%;
+    margin: 0;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid $form-color;
+    color: $form-color;
+    &.border-fix {
+        border-left-width: 0;
+    }
+}
+
+.socialmedia i {
+    margin-right: 15px;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: space-between;
+    width: calc(55% - 10px);
+
+}
+
+.footer-signup {
+    display: flex;
+}
+
+/* ================================================================
+   footer last links
+   ================================================================ */
+
+.footer-ul-2 {
+    margin: 30px auto 0 auto;
+    ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        li {
+            list-style-type: none;
+            margin-bottom: 10px;
+            a {
+                display: block;
+                text-decoration: none;
+                margin-right: 0;
+                width: auto;
+                padding: 0 10px;
+                border-right: 1px solid $border-light-grey;
+                font-family: $young;
+                font-size: 13px;
+                color: $grey-slider-text;
+                white-space: nowrap;
+            }
+            &:last-child a {
+                border: none;
+            }
+        }
+    }
+}
+
+.copyright {
+    text-align: center;
+    font-family: $young;
+    font-size: 13px;
+    color: $grey-slider-text;
+}
+
+.copyright-logos {
+    display: block;
+    margin: 5px auto 30px auto;
+}
+
+.footer-column {
+
+}
+
+//  centering
+
+.txt-center {
+
+}
+
+.flex-mobile-center {
+    @media all and (max-width: $bp-lg) {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: $bp-lg) {
+    .quick-links {
+        width: calc(100% - 20px);
+        flex-direction: column;
+        text-align: center;
+    }
+    .f-mobile-50 {
+        width: calc(100% - 20px);
+    }
+    .socialmedia i {
+        margin-bottom: 35px;
+        zoom: 1.4;
+    }
+    .footer-column {
+        flex-direction: column;
+
+    }
+    .txt-center {
+        text-align: center;
+
+    }
+}
+
+@media all and (max-width: $bp-sm) {
+    .footer-ul {
+        margin: 0 auto;
+    }
+    .footer-signup {
+        flex-direction: column;
+    }
+    .footer-input {
+        width: 100%;
+        &.border-fix {
+            border-left-width: 1px;
+        }
+    }
+    .footer-button {
+        margin: 10px auto 0;
+        width: auto;
+        padding: 0 10px;
+    }
+}

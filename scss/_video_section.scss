@@ -1,0 +1,134 @@
+/* ================================================================
+   video box
+   ================================================================ */
+.video {
+    background-color: $nav-hover;
+}
+
+.tylda {
+    display: block;
+    margin: 10px auto 20px auto;
+}
+
+/* ================================================================
+   video responsive
+   ================================================================ */
+
+.responsive-iframe {
+    max-width: 100%;
+}
+
+/* ================================================================
+   header
+   -after
+   -before
+   ================================================================ */
+
+.header-3rd-carousel {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    margin: 45px 20px 0;
+    text-align: center;
+    &:after {
+        position: absolute;
+        background: url("../images/right_ornament.png") no-repeat;
+        content: '';
+        top: calc(50% - 21px);
+        right: -40px;
+        width: 30px;
+        height: 42px;
+    }
+    &:before {
+        position: absolute;
+        background: url("../images/left_ornament.png") no-repeat;
+        content: '';
+        top: calc(50% - 21px);
+        left: -40px;
+        width: 30px;
+        height: 42px;
+    }
+}
+
+/* ================================================================
+   opinions container
+   ================================================================ */
+
+.opinion {
+    background-color: $nav-hover;
+}
+
+//      rating
+
+.rate {
+    span {
+        line-height: 20px;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
+}
+
+fieldset, label {
+    margin: 0;
+    padding: 0;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label:before {
+    margin: 1px;
+    font-size: 1em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+    //    unicode       http://fontawesome.io/cheatsheet/
+}
+
+.rating > .half:before {
+    content: "\f089";
+    //    unicode       http://fontawesome.io/cheatsheet/
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label {
+    color: #e8a296;
+}
+
+/* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label {
+    color: rgba(232, 162, 150, 0.6);
+}
+
+/* ================================================================
+   media queries
+   ================================================================ */
+
+@media all and (max-width: $bp-sm) {
+    .header-3rd-carousel {
+        margin: 30px auto 0;
+    }
+}

@@ -1,0 +1,310 @@
+.section2 {
+    margin: 25px 20px 0;
+    position: relative;
+    &:before {
+        position: absolute;
+        background: url("../images/flag_left.png") no-repeat;
+        content: '';
+        top: calc(50% - 15px);
+        left: -50px;
+        width: 44px;
+        height: 30px;
+    }
+    &:after {
+        position: absolute;
+        background: url("../images/flag_right.png") no-repeat;
+        content: '';
+        top: calc(50% - 15px);
+        right: -50px;
+        width: 49px;
+        height: 30px;
+    }
+}
+
+/* ================================================================
+   sinusoida & squares
+   ================================================================ */
+.img-block img {
+    display: block;
+}
+
+.sinusoida {
+    background: url("../images/sinusoida.png") repeat-x;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sq-25 {
+    width: calc(25% - 10px);
+}
+
+.sq-50 {
+    width: calc(50% - 10px);
+}
+
+.img-100 {
+    width: 100%;
+}
+
+.sq1 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    p {
+        color: $black-text;
+    }
+    &:hover {
+        background-color: $square-1;
+        color: $white;
+        p {
+            color: $white;
+        }
+        img {
+            opacity: 1;
+        }
+    }
+    img {
+        margin: auto;
+        opacity: 0;
+    }
+}
+
+.sq1-mobile {
+    margin-right: 20px;
+
+}
+
+.sq2 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    p {
+        color: $black-text;
+    }
+    &:hover {
+        background-color: $nav-bgd;
+        color: $white;
+        p {
+            color: $white;
+        }
+        img {
+            opacity: 1;
+        }
+    }
+    img {
+        opacity: 0;
+    }
+}
+
+.sq3 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    color: $black-text;
+
+    p {
+        color: $black-text;
+    }
+    &:hover {
+        background-color: $nav-bgd;
+        color: $white;
+        p {
+            color: $white;
+        }
+        img {
+            opacity: 1;
+        }
+    }
+    img {
+        opacity: 0;
+    }
+}
+
+.sq4a {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    color: $black-text;
+    &:hover {
+        background-color: $nav-bgd;
+        color: $white;
+    }
+
+}
+
+.sq4b {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    color: $black-text;
+    &:hover {
+        background-color: $square-1;
+        color: $white;
+    }
+
+}
+
+.sq5 {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    bottom: 40px;
+    left: 40px;
+    p {
+        color: $black-text;
+    }
+    &:hover {
+        background-color: $nav-bgd;
+        color: $white;
+        p {
+            color: $white;
+        }
+        img {
+            opacity: 1;
+        }
+    }
+    img {
+
+        opacity: 0;
+    }
+
+    &:hover {
+        background-color: $nav-bgd;
+        color: $white;
+    }
+
+}
+
+.sq5-mobile {
+    margin: 0 20px;
+
+}
+
+/* ================================================================
+   after and before background, images
+   a- means after
+   b- means before
+   ================================================================ */
+
+.a-title-b {
+    text-transform: uppercase;
+    margin-top: 45px;
+    position: relative;
+    &:before {
+        position: absolute;
+        background: url("../images/star_left_2.png") no-repeat;
+        content: '';
+        top: calc(50% - 24px);
+        left: -50px;
+        width: 48px;
+        height: 48px;
+    }
+    &:after {
+        position: absolute;
+        background: url("../images/star-Right_2.png") no-repeat;
+        content: '';
+        top: calc(50% - 24px);
+        right: -50px;
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* ================================================================
+    brands carousel
+   ================================================================ */
+
+#owl3 .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//      media for video section
+
+@media all and (max-width: $bp-lg) {
+    .video-mobile {
+        flex-direction: column;
+    }
+    iframe {
+        margin: 20px 0 30px;
+    }
+    .sq3-mobile {
+        margin-bottom: 20px;
+    }
+    .sq4a-mobile {
+        margin: 0 20px 0 0;
+    }
+    .sq-25 {
+        width: calc(50% - 10px);
+        order: 1;
+
+    }
+    .sq-50 {
+        width: 100%;
+
+    }
+    .sq {
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .sq1-mobile {
+        margin: 0 0 20px 0;
+    }
+    .sq4a {
+        order: 1;
+    }
+    .sq4b {
+        order: 2;
+    }
+    .sq5 {
+        order: 3;
+
+    }
+    .sq5-mobile {
+        width: 100%;
+        order: 2;
+        margin: 20px 0 0 0;
+    }
+    .flex-wrap {
+        flex-wrap: wrap;
+
+    }
+}
+
+@media all and (max-width: $bp-sm) {
+    .sq1, .sq2, .sq3, .sq4a, .sq4b, .sq5 {
+        top: 10px;
+        right: 10px;
+        bottom: 10px;
+        left: 10px;
+    }
+    .sq-25 {
+        width: 100%;
+    }
+    .sq1-mobile {
+        margin: 0 0 15px;
+    }
+    .sq4a-mobile {
+        margin: 0 0 15px 0;
+    }
+    .sq5-mobile {
+        margin: 15px 0 0 0;
+    }
+    .a-title-b {
+        margin-top: 30px;
+    }
+}
+

@@ -1,0 +1,115 @@
+.mg-l-xs {
+    margin-left: 5px;
+}
+
+.mg-r-xs {
+    margin-right: 5px;
+}
+
+.mg-l-s {
+    margin-left: 10px;
+}
+
+.mg-l-m {
+    margin-left: 20px;
+}
+
+.mg-r-s {
+    margin-right: 10px;
+}
+
+.mg-r-m {
+    margin-right: 20px;
+}
+
+.mg-t-s {
+    margin-top: 10px;
+}
+
+.mg-t-m {
+    margin-top: 20px;
+}
+
+.mg-t-l {
+    margin-top: 30px;
+}
+
+.mg-b-l {
+    margin-bottom: 30px;
+}
+
+.mg-b-s {
+    margin-bottom: 10px;
+}
+
+.mg-b-m {
+    margin-bottom: 20px;
+}
+
+.owl-2-mg {
+    margin: 0 10px;
+}
+
+.pd-t-s {
+    padding-top: 10px;
+}
+
+.pd-b-s {
+    padding-bottom: 10px;
+}
+
+.pd-l-m {
+    padding-left: 20px;
+}
+
+.pd-r-m {
+    padding-right: 20px;
+}
+
+//  logo desktop spacing
+.logo-lg {
+    margin: 10px 20px;
+    @media all and (max-width: $bp-lg) {
+        margin: 0;
+    }
+}
+.logo {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+//  hover section spacing
+
+.hover-sq-mg {
+    margin-top: 15px;
+}
+
+.owl-3-mg {
+    margin-top: 30px;
+}
+
+.video-pd {
+    padding: 50px 20px;
+    @media all and (max-width: $bp-lg) {
+        padding: 20px;
+    }
+}
+.item-mg-r-l {
+    margin-right: 50px;
+}
+
+//  others spacing
+
+.title-mg {
+    margin: 16px 0;
+}
+
+.sq-mg {
+    margin-bottom: 20px;
+}
+
+@media all and (max-width: $bp-sm) {
+    .sq-mg {
+        margin-bottom: 15px;
+    }
+}

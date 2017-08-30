@@ -1,0 +1,136 @@
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+//  flex features
+.flex {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+.jc-space-around {
+    justify-content: space-around;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-grow-2 {
+    flex-grow: 2;
+}
+
+.vertical-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+//      width
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main {
+    width: 100%;
+}
+
+//      another
+
+.relative {
+    position: relative;
+}
+
+.float-left-50 {
+    float: left;
+    width: 50%;
+    display: block;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.two-third {
+    width: calc(100% * 2 / 3);
+    @media all and (max-width: $bp-lg) {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.one-third {
+    width: calc(100% / 3);
+    @media all and (max-width: $bp-lg) {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.block {
+    display: block;
+}
+
+.img-mg-auto {
+    margin: 0 auto;
+    // dodano niżej
+    display: block;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+.hide-mobile {
+    @media all and (max-width: $bp-lg) {
+        display: none;
+    }
+}
+
+.hide-desktop {
+    @media all and (min-width: $bp-lg + 1px) {
+        display: none;
+    }
+}
+
+// media queries
+
+@media all and (max-width: $bp-sm) {
+    .container {
+        max-width: 360px;
+        padding: 0 15px;
+    }
+
+}
+@media all and (min-width: $bp-sm + 1px) {
+    .only-mobile {
+        display: none;
+    }
+}
